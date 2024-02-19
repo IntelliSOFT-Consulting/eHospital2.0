@@ -1,4 +1,7 @@
 Uuid,Void/Retire,Name,Description,Format,Foreign,Searchable
-b2c38640-2603-4629-aebd-3b54f33f1e3a,0,Telephone Number,The telephone number for the person,java.lang.String,,,
+14d4f066-15f5-102d-96e4-000c29c2a5d7,,Telephone Number,The telephone number for the person,java.lang.String,,,
 8b56eac7-5c76-4b9c-8c6f-1deab8d3fc47,,Unknown patient,Used to flag patients that cannot be identified during the check-in process,java.lang.String,,,
 94614350-84c8-41e0-ac29-86bc107069be,,Alternate phone number,Alternate telephone number for the person,java.lang.String,,,
+a62688fc-4a27-4285-81d9-1b7993188d38,,Unique OPD No,Unique OPD No.,java.lang.String,,yes,Edit:PAT,,
+b2c38640-2603-4629-aebd-3b54f33f1e3a,,Contact Number,The contact number for the person,java.lang.String,,,
+b8d0b331-1d2d-4a9a-b741-1816f498bdb6,,Email Address,The Email Address of the person,^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$,,,

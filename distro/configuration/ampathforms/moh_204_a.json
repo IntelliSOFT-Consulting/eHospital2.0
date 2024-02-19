@@ -1,0 +1,451 @@
+{
+  "name": "MOH 204 A Registration Form",
+  "retired": false,
+  "pages": [
+    {
+      "label": "Visit details",
+      "sections": [
+        {
+          "label": "Visit details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Health Facility name:",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            },
+            {
+              "label": "Date of Enrollment",
+              "type": "obs",
+              "required": false,
+              "id": "dateOfEnrollment",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "4ac093fe-b486-4520-a90c-08dd03b19414",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Client Details",
+      "sections": [
+        {
+          "label": "Client Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Type of facility referred from",
+              "type": "obs",
+              "required": true,
+              "id": "facilityRefferedFrom",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "adabb064-a011-4cc5-b7b5-faa1dd14624d",
+                "answers": [
+                  {
+                    "concept": "93c07155-1e4f-4996-9f78-0f476f11605a",
+                    "label": "Referred from Community Unit"
+                  },
+                  {
+                    "concept": "9b31621c-17c2-46c7-98ce-051dc8564dc7",
+                    "label": "Referred from Within"
+                  },
+                  {
+                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "label": "N/A"
+                  },
+                  {
+                    "concept": "61f9ac9f-4743-4f95-bd83-02881612083c",
+                    "label": "Referred From other facility"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Specify Facility referred from",
+              "required": false,
+              "id": "facilityReferredFromSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "facilityRefferedFrom !== '61f9ac9f-4743-4f95-bd83-02881612083c'"
+              }
+            },
+            {
+              "label": "Caregiver’s Telephone No.",
+              "required": true,
+              "id": "careGiverTelephone",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": []
+            },
+            {
+              "label": "Weight",
+              "id": "weight",
+              "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+              "questionOptions": {
+                "answers": [],
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric",
+                "min": 0
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "Height(cm)",
+              "id": "height",
+              "required": true,
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
+              "questionOptions": {
+                "answers": [],
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "numeric",
+                "min": 2.5
+              },
+              "type": "obs",
+              "validators": []
+            },
+            {
+              "label": "MID-UPPER ARM CIRCUMFERENCE",
+              "type": "obs",
+              "required": true,
+              "id": "midUpperArmCircumference",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "35efeef5-fad4-4188-8cd2-78040950200b",
+                "answers": [
+                  {
+                    "concept": "27802BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Red"
+                  },
+                  {
+                    "concept": "109669BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Green"
+                  },
+                  {
+                    "concept": "109672BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Yellow"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Danger signs baby",
+              "type": "obs",
+              "required": true,
+              "id": "dangerSignsBaby",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "bb96bdbb-a5fb-4197-9e25-d94d95f4a6c1",
+                "answers": [
+                  {
+                    "concept": "107349BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unable to drink or breastfeed"
+                  },
+                  {
+                    "concept": "140528BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Vomiting everything"
+                  },
+                  {
+                    "concept": "13688BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Convulsions"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  },
+                  {
+                    "concept": "140529BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Currently convulsing"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Duration of Illness",
+              "required": true,
+              "id": "durationOfIllness",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1817BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "durationOfIllness < 0",
+                  "message": "Duration of Illness cannot be less than 0"
+                }
+              ]
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": true,
+              "id": "suspectedMalariaCases",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "71cd8813-3e42-4be9-ad2b-6a9711847e8a",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Tracer Drugs Prescribed",
+              "type": "obs",
+              "required": true,
+              "id": "tracerDrugsPrescribed",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "03f1950d-2853-42b5-b78e-5842a691607a",
+                "answers": [
+                  {
+                    "concept": "7e062525-598e-4634-868d-1d015badbd36",
+                    "label": "ORS & Zinc"
+                  },
+                  {
+                    "concept": "382BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "ORAL REHYDRATION SALTS"
+                  },
+                  {
+                    "concept": "a7587ce7-f402-4ee3-b36b-4ab78d93d221",
+                    "label": "ZINC"
+                  },
+                  {
+                    "concept": "86339AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "VITAMIN A"
+                  },
+                  {
+                    "concept": "c0595755-f114-4800-88dc-ac97b7d62ec8",
+                    "label": "Amox DT"
+                  },
+                  {
+                    "concept": "7127BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "OXYGEN"
+                  },
+                  {
+                    "concept": "8f668b49-584f-4cba-b0f2-817a8aaf50c4",
+                    "label": "ALBENDAZOLE"
+                  },
+                  {
+                    "concept": "2045BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "INTRAVENOUS FLUID ADMINISTRATION"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "IMNCI Classifications or Diagnosis",
+              "required": true,
+              "id": "imnciClassification",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7e0cb443-eece-40da-9acd-94888a7695b1"
+              },
+              "validators": []
+            },
+            {
+              "label": "Quantity of medication prescribed per dose",
+              "required": true,
+              "id": "quantityOfMedicationPrescribed",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "109537BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "quantityOfMedicationPrescribed < 0",
+                  "message": "Quantity of medication prescribed per dose cannot be less than 0"
+                }
+              ]
+            },
+            {
+              "label": "All other treatments",
+              "required": false,
+              "id": "allOtherTreatments",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "04088077-2c91-4fa8-9406-7005d884d151"
+              },
+              "validators": []
+            },
+            {
+              "label": "Immunization status up to date",
+              "type": "obs",
+              "required": true,
+              "id": "immunizationUpToDate",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "b75dc0fa-eb76-4f30-94fa-83d6ca352117",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "TB Screening",
+              "type": "obs",
+              "required": true,
+              "id": "tbScreening",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "10ed34c4-661e-4744-8dae-f242280f0cc1",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Nutrition and diatetics",
+              "type": "obs",
+              "required": true,
+              "id": "nutritionAndDietetics",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "dab6bebf-323c-4a0d-82fd-d4c5afdeebda",
+                "answers": [
+                  {
+                    "concept": "1502BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "NUTRITION COUNSELING"
+                  },
+                  {
+                    "concept": "9822d9da-7feb-4da6-8a99-6f842540931b",
+                    "label": "Nutrition therupetic supplements"
+                  },
+                  {
+                    "concept": "da9055e2-17a1-4042-8e38-cf396a1ce88f",
+                    "label": " Diatetics"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Type of facility referred to",
+              "type": "obs",
+              "required": true,
+              "id": "typeOfFacilityReferredTo",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a91ac92b-9bd7-44e6-8f52-1f97f1b32c4b",
+                "answers": [
+                  {
+                    "concept": "4ca6ae87-7a34-4079-a67b-7107156f30e8",
+                    "label": "Referred to Community Unit"
+                  },
+                  {
+                    "concept": "ffc9af40-cfb6-4edf-89a8-d478a1ed00f6",
+                    "label": "Referred to other facility"
+                  },
+                  {
+                    "concept": "76252f2b-4a80-4414-a630-a2bee89c00a0",
+                    "label": "Referred Within"
+                  },
+                  {
+                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "label": "N/A"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Specify Facility referred to",
+              "required": false,
+              "id": "facilityReferredToSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "2c69e8af-4500-4bf2-b8f6-0d38d5c546ad",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "typeOfFacilityReferredTo !== 'ffc9af40-cfb6-4edf-89a8-d478a1ed00f6'"
+              }
+            },
+            {
+              "label": "REMARKS/Outome",
+              "required": false,
+              "id": "remarks",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6990f720-b0f7-405d-bfb6-7a1f058109bb"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.1",
+  "description": "MOH 204 A Registration Form",
+  "encounterType": "17f89420-d397-4270-8596-54d495ac707d",
+  "uuid": "ae6b8df5-b870-403c-9663-9116b2ccb783"
+}

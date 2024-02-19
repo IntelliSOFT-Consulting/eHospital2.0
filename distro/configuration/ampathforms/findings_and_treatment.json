@@ -1,0 +1,91 @@
+{
+  "name": "Findings and Treatment",
+  "retired": false,
+  "pages": [
+    {
+      "label": "Client details",
+      "sections": [
+        {
+          "label": "Client details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Chief Complian",
+              "id": "co",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "f3c308eb-224a-4f36-9b1e-bea4b5030eb7"
+              }
+            },
+            {
+              "label": "History of Presenting illness",
+              "id": "historyOfPresentingIllness",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "940e138d-399f-42dc-a28c-1d7709e917cc"
+              }
+            },
+            {
+              "label": "General Examination",
+              "id": "generalExamination",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5d72820a-de18-4de3-bd88-803abc61a0ba"
+              }
+            },
+            {
+              "label": "Systemic Examination",
+              "id": "systemicExamination",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "c0462e9b-d91b-4e14-a249-4120362ad0da"
+              }
+            },
+            {
+              "label": "Impressions/Diagnosisn",
+              "id": "impressionsDiagnosis",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "759bf916-5549-4fe1-a588-a399ba04dfd5"
+              }
+            },
+            {
+              "label": "Treatment Plan",
+              "id": "treatment",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "e670dc2a-0c21-4fda-a8df-d9b7b1ca87ec"
+              }
+            },
+            {
+              "label": "TCA",
+              "id": "tca",
+              "type": "obs",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "d08b33dd-d807-460a-a91e-049c30b7a0aa"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0",
+  "description": "Findings and Treatment",
+  "encounterType": "f02fecec-4d74-4430-8e59-5150016551e5",
+  "uuid": "95301452-081a-44e2-a561-fe83d6f02a1f"
+}

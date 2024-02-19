@@ -1,0 +1,73 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:151,Data class,Data type,Answers
+93c07155-1e4f-4996-9f78-0f476f11605a,,Referred from Community Unit,Referred from Community Unit,,,,,Misc,N/A,
+61f9ac9f-4743-4f95-bd83-02881612083c,,Referred From other facility,Referred From other facility,,,,,Misc,N/A,
+9b31621c-17c2-46c7-98ce-051dc8564dc7,,Referred from Within,Referred from Within,,,,,Misc,N/A,
+ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
+44335370-b96b-405e-97ad-ea4d4451a2ca,,Type of facility referred from,Type of facility referred from,"If patient was referred to this facility, record as 
+per 1=CU, 2=From other facility, 3= Within ,4=N/A",,,,Misc,Coded,"Referred from Community Unit,
+Referred From other facility,
+Referred from Within,
+N/A"
+140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Name of facility Referred from,Name of facility Referred from,,,,,Question,Text,
+5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Systolic Blood Pressure,Systolic Blood Pressure,,,,,Finding,numeric,
+5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Diastolic Blood Pressure,Diastolic Blood Pressure,,,,,Finding,numeric,
+108485BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Visual acuity right eye,"Visual acuity, right eye",,,,,Misc,Text,
+108483BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Visual acuity left eye,"Visual acuity, left eye",,,,,Misc,Text,
+76ba101e-9b7c-40c4-aad0-c659aaa17268,,Visual Acuity **RE / LE**,Visual Acuity **RE / LE**,"Record the result from the 
+Test of the patient' vision 
+to identify early blindness 
+RE-Right eye and LE -Left eye",,,,Question,N/A,"Visual acuity right eye,Visual acuity left eye"
+106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Presumed diagnosis,Presumed diagnosis,,,,,Misc,N/A,
+1193BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Not done,Not done,,,,,Misc,N/A,
+1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Patient referred,Patient referred,,,,,Misc,N/A,
+1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,On TB Treatment,On TB Treatment,,,,,Misc,N/A,
+42eb7cdc-bd89-4b20-8e52-699a7e685181,,Screened for tuberculosis,TB Screening,"Indicate if TB screening is done.   
+1. presumed TB 2.Not done   3. Refered",,,,Question,Coded,"Presumed diagnosis,
+Not done,
+Patient referred"
+5902fc83-0742-4eb2-bd02-823f71d0e641,,Presenting with symptoms but NOT tested,Presenting with symptoms but NOT tested,,,,,Misc,N/A,
+1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,RAPID TEST FOR MALARIA,RAPID TEST FOR MALARIA,,,,,Misc,N/A,
+307a4edd-6a8b-4a49-842e-34117cbea114,,Microscopy Tested (-ve) ,Microscopy Tested (-ve) ,,,,,Misc,N/A,
+1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,RAPID TEST FOR MALARIA,RAPID TEST FOR MALARIA,,,,,Misc,N/A,
+0b288300-83af-4b60-938f-62bf38f4ce2b,,Microscopy Tested (+ve ) for patients presented with symptoms of malaria,Microscopy Tested (+ve ) for patients presented with symptoms of malaria,,,,,Misc,N/A,
+16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Suspected Malaria cases(all clients presenting with symptoms of Malaria),Malaria,"Record using the appropriate key 
+1.Presenting with symptoms but 
+NOT tested 2.RDT Tested (-ve) 
+3.Microscopy Tested (-ve)  
+4.RDT Tested  (+ve) 5. Microscopy 
+Tested (+ve ) for patients presented
+ with symptoms of malaria ",,,,Diagnosis,Coded,"Presenting with symptoms but NOT tested,
+RAPID TEST FOR MALARIA,
+Microscopy Tested (-ve), 
+RAPID TEST FOR MALARIA"
+159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Presumed diagnosis,Presumed diagnosis,,,,,Misc,N/A,
+1940BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,No signs or symptoms of disease,No signs or symptoms of disease,,,,,Misc,N/A,
+1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,On TB Treatment,On TB Treatment,,,,,Misc,N/A,
+1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Not Done,Not Done,,,,,Misc,N/A,
+140998BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Screened for tuberculosis,Screened for tuberculosis,"Indicate if TB screening is done.   
+1. presumed TB 2. No signs 
+3. On TB treatment 4.Not done",,,,Question,Coded,"Presumed diagnosis,
+No signs or symptoms of disease,
+On TB Treatment,
+Not Done"
+aa295620-4576-4459-93ae-00bac0de4c77,,Diagnosis,Diagnosis,,,,,Finding,Text,
+1262BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Treatment,Treatment,Record the name of  Drugs from the prescription or drug codes if provided,,,,Misc,N/A,
+efce67b4-7402-45d0-bc54-dfd840fdc463,,Prescription,Prescription,,,,,Finding,Text,
+f18c2f4e-3937-4898-89d6-7c6f917157c6,,Nutrition assessment,Nutrition assessment,,,,,Misc,N/A,
+1435e7ff-1ba9-4ea7-900a-181c2d1507e2,,Nutrition education,Nutrition education,,,,,Misc,N/A,
+341e525d-f1ac-41d2-a5f6-cc0a97ec372d,,Nutrition supplements,Nutrition supplements,,,,,Misc,N/A,
+f570fc3a-e021-4475-92aa-84ad9592cbb9,,Nutritional interventions provided ,Nutritional interventions provided ,"Record using the appropriate key 
+provided i.e: 1=Nutrition assessment, 
+2=Nutrition education, 
+3= Nutrition supplements",,,,Question,Coded,"Nutrition assessment,
+Nutrition education,
+Nutrition supplements"
+4ca6ae87-7a34-4079-a67b-7107156f30e8,,Referred to Community Unit,Referred to Community Unit,,,,,Misc,N/A,
+ ffc9af40-cfb6-4edf-89a8-d478a1ed00f6,,Referred to other facility,Referred to other facility,,,,,Misc,N/A,
+76252f2b-4a80-4414-a630-a2bee89c00a0,,Referred Within,Referred Within,,,,,Misc,N/A,
+ ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
+a9b68c20-8ace-459a-8e7b-68c9a8487aba,,Type of facility referred to,Type of facility referred to,,,,,Question,Coded,"Referred to Community Unit,
+Referred to other facility,
+Referred Within,
+N/A"
+2c69e8af-4500-4bf2-b8f6-0d38d5c546ad,,Referred to other facility Specify,Referred to other facility Specify,,,,,Question,Text,

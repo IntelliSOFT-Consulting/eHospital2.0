@@ -1,16 +1,30 @@
 Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:150,Data class,Data type,Answers
-68391cec-08be-454d-8182-ff4e567de66d,,Revisit,Revisit,"Record the OPD number of the patient who returns to the health facility for service or follow ups as per IMNCI recommendations.",,,,Misc,N/A,
-4ca6ae87-7a34-4079-a67b-7107156f30e8,,Referred from Community Unit,Referred from Community Unit,,,,,Misc,N/A,
-ffc9af40-cfb6-4edf-89a8-d478a1ed00f6,,Referred From other facility,Referred From other facility,,,,,Misc,N/A,
+68391cec-08be-454d-8182-ff4e567de66d,,Revisit,Revisit,"Record the OPD number of the patient who 
+returns to the health facility for service or 
+follow ups as per IMNCI recommendations.",,,,Misc,N/A,
+93c07155-1e4f-4996-9f78-0f476f11605a,,Referred from Community Unit,Referred from Community Unit,,,,,Misc,N/A,
+61f9ac9f-4743-4f95-bd83-02881612083c,,Referred From other facility,Referred From other facility,,,,,Misc,N/A,
 76252f2b-4a80-4414-a630-a2bee89c00a0,,Referred from Within,Referred from Within,,,,,Misc,N/A,
-ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
-108757BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Type of facility referred from,Type of facility referred from,"If patient was referred to this facility, record as per 1=CU, 2=From other facility, 3= Within ,4=N/A",,,,Misc,Coded,"Referred from Community Unit,Referred From other facility,Referred from Within,N/A"
-140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Referred from other facility,Referred from other facility,,,,,Question,Text,
-109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Caregiver’s Telephone No.,Caregiver’s Telephone No.,"The telephone number should be written in this column to enable tracing or follow-up.",,,,Question,Text,
+ ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
+108757BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Type of facility referred from,Type of facility referred from,"If patient was referred to this facility, record as 
+per 1=CU, 2=From other facility, 3= Within ,4=N/A",,,,Misc,Coded,"Referred from Community Unit,
+Referred From other facility,
+Referred from Within,
+N/A"
+140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Name of facility Referred from,Name of facility Referred from,,,,,Question,Text,
+109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Caregiver's Telephone No.,Caregiver's Telephone No.,"The telephone number should be written in this column 
+to enable tracing or follow-up.",,,,Question,Text,
 109669BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Green,Green,"Green: indicating the child is well nourished, ",,,,Misc,N/A,
 109672BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Yellow,Yellow,Yellow: indicating the child is at risk of acute malnutrition ,,,,Misc,N/A,
 27802BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Red,Red,Red: indicating the child has severe acute malnutrition,,,,Misc,N/A,
-1434BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,MID-UPPER ARM CIRCUMFERENCE,MUAC,"Record the Mid Upper Arm Circumference (MUAC) indicators as per provided codes i.e. 1. Green: indicatingthe child is well nourished, 2. Yellow: indicating the childis at risk of acute malnutrition and 3. Red: indicating the child has severe acute malnutrition. Manage the child as per IMNCI and IMAM guidelines.",,,,Question,Coded,"Green color,Yellow color,Red color"
+1434BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,"MID-UPPER ARM CIRCUMFERENCE, RGY","MID-UPPER ARM CIRCUMFERENCE, RGY","Record the Mid Upper Arm Circumference (MUAC) 
+indicators as per provided codes i.e. 1. Green: indicating
+ the child is well nourished, 2. Yellow: indicating the child
+ is at risk of acute malnutrition and 3. Red: indicating the 
+child has severe acute malnutrition. Manage the child as 
+per IMNCI and IMAM guidelines.",,,,Question,Coded,"Green color,
+Yellow color,
+Red color"
 107349BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Unable to drink or breastfeed,Unable to drink or breastfeed,,,,,Misc,N/A,
 140528BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Vomiting everything,Vomiting everything,,,,,Misc,N/A,
 13688BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Convulsions,Convulsions,,,,,Misc,N/A,
@@ -43,7 +57,7 @@ RAPID TEST FOR MALARIA"
 382BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,ORAL REHYDRATION SALTS,ORAL REHYDRATION SALTS,,,,,Misc,N/A,
 a7587ce7-f402-4ee3-b36b-4ab78d93d221,,ZINC,ZINC,,,,,Misc,N/A,
 86339AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,VITAMIN A,VITAMIN A,,,,,Misc,N/A,
-c0595755-f114-4800-88dc-ac97b7d62ec8,,"Amox DT, ",Amox DT,,,,,Misc,N/A,
+c0595755-f114-4800-88dc-ac97b7d62ec8,,Amox DT,Amox DT,,,,,Misc,N/A,
 7127BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,OXYGEN,OXYGEN,,,,,Misc,N/A,
 8f668b49-584f-4cba-b0f2-817a8aaf50c4,,ALBENDAZOLE,ALBENDAZOLE,,,,,Misc,N/A,
 2045BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,INTRAVENOUS FLUID ADMINISTRATION,INTRAVENOUS FLUID ADMINISTRATION,,,,,Misc,N/A,
@@ -78,8 +92,7 @@ da9055e2-17a1-4042-8e38-cf396a1ce88f,, Diatetics, Diatetics,,,,,Misc,N/A,
 0127c910-5b43-4882-afd5-b1158f6784fa,,Nutrition and diatetics,Nutrition and diatetics,,,,,Question,Coded,"NUTRITION COUNSELING,
 Nutrition therupetic supplements, 
  Diatetics"
-"4ca6ae87-7a34-4079-a67b-7107156f30e8
-",,Referred to Community Unit,Referred to Community Unit,,,,,Misc,N/A,
+4ca6ae87-7a34-4079-a67b-7107156f30e8,,Referred to Community Unit,Referred to Community Unit,,,,,Misc,N/A,
  ffc9af40-cfb6-4edf-89a8-d478a1ed00f6,,Referred to other facility,Referred to other facility,,,,,Misc,N/A,
 76252f2b-4a80-4414-a630-a2bee89c00a0,,Referred Within,Referred Within,,,,,Misc,N/A,
  ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
@@ -88,4 +101,4 @@ Referred to other facility,
 Referred Within,
 N/A"
 2c69e8af-4500-4bf2-b8f6-0d38d5c546ad,,Referred to other facility Specify,Referred to other facility Specify,,,,,Question,Text,
- 6990f720-b0f7-405d-bfb6-7a1f058109bb,,REMARKS/Outome,REMARKS/Outome,,,,,Question,Text,
+6990f720-b0f7-405d-bfb6-7a1f058109bb,,REMARKS/Outome,REMARKS/Outome,,,,,Question,Text,

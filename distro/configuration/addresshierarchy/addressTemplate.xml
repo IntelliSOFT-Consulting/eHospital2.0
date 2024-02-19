@@ -1,6 +1,5 @@
 <org.openmrs.layout.address.AddressTemplate>
     <nameMappings class="properties">
-        <property name="country" value="Country"/>
         <property name="address1" value="County"/>
         <property name="address2" value="SubCounty"/>
         <property name="address3" value="Ward"/>
@@ -9,7 +8,6 @@
         <property name="address6" value="Landmark"/>
     </nameMappings>
     <sizeMappings class="properties">
-        <property name="country" value="40"/>
         <property name="address1" value="40"/>
         <property name="address2" value="40"/>
         <property name="address3" value="40"/>
@@ -21,7 +19,6 @@
         <property name="country" value="Kenya"/>
     </elementDefaults>
     <lineByLineFormat>
-        <string>country</string>
         <string>address1</string>
         <string>address2</string>
         <string>address3</string>

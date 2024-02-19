@@ -1,72 +1,101 @@
 {
-  "@openmrs/esm-styleguide": {
-      "Brand color #1": "#235787",
-      "Brand color #2": "#235787",
-      "Brand color #3": "#FC8EAC"
-  },
-  "@openmrs/esm-login-app": {
-      "logo": {
-          "src": "/openmrs/spa/login-icon.png"
-      }
-  },
-  "@openmrs/esm-primary-navigation-app": {
-      "logo": {
-          "src": "/openmrs/spa/primary-navigation.png"
-      }
-  },
-  "@openmrs/esm-patient-chart-app": {
-      "logo": {
-          "src": "/openmrs/spa/primary-navigation.png"
-      }
-  },
-  "@openmrs/esm-patient-registration-app": {
-      "sectionDefinitions": [
+    "@openmrs/esm-styleguide": {
+        "Brand color #1": "#235787",
+        "Brand color #2": "#235787",
+        "Brand color #3": "#FC8EAC"
+    },
+    "@openmrs/esm-login-app": {
+        "logo": {
+            "src": "/openmrs/spa/login-icon.png"
+        }
+    },
+    "@openmrs/esm-primary-navigation-app": {
+        "logo": {
+            "src": "/openmrs/spa/primary-navigation.jpg"
+        }
+    },
+    "@openmrs/esm-patient-chart-app": {
+        "logo": {
+            "src": "/openmrs/spa/primary-navigation.jpg"
+        }
+    },
+    "@sjthc/esm-patient-registration-app": {
+        "sectionDefinitions": [  
           {
-              "id": "contact",
-              "name": "Contact Details",
-              "fields": [
-                "address",
-                "phone",
-                "alternatePhone"
-              ]
-            }
-      ],
-      "sections": [
-          "demographics",
-          "contact",
-          "relationships"
-      ],
-      "fieldDefinitions": [
+            "id": "contact",
+            "name": "Contact Details",
+            "fields": [
+              "address",
+              "phone",
+              "alternatePhone"
+            ]
+          }
+        ],
+        "sections": [
+            "demographics",
+            "contact",
+            "relationships"
+        ],
+        "fieldDefinitions": [
+              {
+                "id": "alternatePhone",
+                "type": "person attribute",
+                "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
+                "label": "Alternate phone number",
+                "validation": {
+                  "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+                }
+              },
+              {
+                "id": "address.address1",
+                "type": "address",
+                "label": "County"
+              },
+              {
+                "id": "address.address2",
+                "type": "address",
+                "label": "Sub-County"
+              },
+              {
+                "id": "address.address3",
+                "type": "address",
+                "label": "Ward"
+              },
+              {
+                "id": "address.address4",
+                "type": "address",
+                "label": "Village",
+                "validation": {
+                  "required": true
+                }
+              },
+              {
+                "id": "address.address2",
+                "type": "address",
+                "label": "Landmark"
+              }
+        ],
+        "gender": [
           {
-              "id": "phone",
-              "type": "person attribute",
-              "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
-              "label": "Telephone contact",
-              "validation": {
-                "required": true,
-                "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
-              }
-            },
-            {
-              "id": "alternatePhone",
-              "type": "person attribute",
-              "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
-              "label": "Alternate phone number",
-              "validation": {
-                "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
-              }
-            }
-      ],
-      "address": {
+            "id": "male",
+            "value": "Male",
+            "label": "Male"
+          },
+          {
+            "id": "female",
+            "value": "Female",
+            "label": "Female"
+          }
+        ],
+        "address": {
           "useAddressHierarchy": {
             "useAddressHierarchyLabel": {
               "countyDistrict": "County",
-              "stateProvince": "Sub county",
-              "address3": "Ward"
-              
+              "address4": "Ward",
+              "stateProvince": "Sub-County"
             },
             "searchAddressByLevel": true
           }
         }
-  }
+    }
 }

@@ -4,3 +4,4 @@ Uuid,Void/Retire,Name,Description,Required,Format,Format description,Validator,L
 b4143563-16cd-4439-b288-f83d61670fc8,,ID Card,ID Card,FALSE,,,,NOT_USED,UNIQUE
 a71403f3-8584-4289-ab41-2b4e5570bd45,,SSN,Social Security Number,FALSE,[A-Z]{1}-[0-9]{7},"Identifier should be 1 letter, followed by a dash and 7 numerical characters. Eg, A-0010902",,NOT_USED,UNIQUE
 164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Unique OPD number,Record the unique OPD number which is given to each NEW out patient  annually and on the first visit for individual identification,FALSE,,,,NOT_USED,UNIQUE
+49af6cdc-7968-4abb-bf46-de10d7f4859f,,National ID, Record National ID,FALSE,,,,NOT_USED,UNIQUE

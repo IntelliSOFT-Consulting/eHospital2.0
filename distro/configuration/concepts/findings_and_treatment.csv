@@ -1,0 +1,9 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:150,Data class,Data type,Answers
+f3c308eb-224a-4f36-9b1e-bea4b5030eb7,,Chief Complain,Chief Complain,,,,,Question,Text,
+940e138d-399f-42dc-a28c-1d7709e917cc,,History of Presenting illness,History of Presenting illness,,,,,Question,Text,
+5d72820a-de18-4de3-bd88-803abc61a0ba,,General Examination,General Examination,,,,,Question,Text,
+c0462e9b-d91b-4e14-a249-4120362ad0da,,Systemic Examination,Systemic Examination,,,,,Question,Text,
+759bf916-5549-4fe1-a588-a399ba04dfd5,,Impressions/Diagnosis,Impressions/Diagnosis,,,,,Question,Text,
+e670dc2a-0c21-4fda-a8df-d9b7b1ca87ec,,Treatment Plan,Treatment Plan,,,,,Question,Text,
+d08b33dd-d807-460a-a91e-049c30b7a0aa,,TCA,TCA,,,,,Question,Text,
+45e967c8-a275-4000-93c1-172559a96dc2,,Labs,Labs,,,,,Question,Text,

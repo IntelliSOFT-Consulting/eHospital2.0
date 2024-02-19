@@ -26,7 +26,7 @@
     "@openmrs/esm-appointments-app": "next",
     "@openmrs/esm-service-queues-app": "next",
     "@openmrs/esm-patient-list-management-app": "next",
-    "@openmrs/esm-patient-registration-app": "next",
+    "@sjthc/esm-patient-registration-app": "5.2.6",
     "@openmrs/esm-patient-search-app": "next",
     "@openmrs/esm-openconceptlab-app": "next",
     "@openmrs/esm-system-admin-app": "next",
