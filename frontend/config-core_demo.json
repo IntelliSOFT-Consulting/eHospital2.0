@@ -215,7 +215,7 @@
     "vitals": {
       "useFormEngine": true,
       "formName": "1. Triage",
-      "formUuid": "6205a52d-eb0a-3b86-84b1-812858d272fb",
+      "formUuid": "1165eb3a-73f4-3cbe-ae87-a30a05d89b88",
       "encounterTypeUuid": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
     },
     "concepts": {
