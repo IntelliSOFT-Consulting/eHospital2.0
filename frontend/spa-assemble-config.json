@@ -37,13 +37,10 @@
     "@ehospital/esm-billing-app": "next",
     "@ehospital/esm-patient-registration-app": "next",
     "@ehospital/esm-patient-list-app": "next",
-    "@ehospital/esm-reports-app": "next",
     "@ehospital/esm-service-queues-app": "next",
     "@ehospital/esm-procedure-app": "next",
     "@ehospital/esm-admin-nav-app": "next",
-    "@ehospital/esm-import-export-app": "next",
-    "@ehospital/esm-patient-visits-report-app": "next",
-    "@ehospital/esm-patient-flags-app": "next"
+    "@ehospital/esm-patient-visits-report-app": "next"
   },
   "excludedFrontendModules": []
 }
