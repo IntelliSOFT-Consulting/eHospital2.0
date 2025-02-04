@@ -23,7 +23,7 @@ services:
       SPA_CONFIG_URLS: /openmrs/spa/config.json
       SPA_DEFAULT_LOCALE:
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/"]
+      test: [ "CMD", "curl", "-f", "http://localhost/" ]
       timeout: 5s
     depends_on:
       - backend
@@ -42,7 +42,7 @@ services:
       OMRS_CONFIG_CONNECTION_USERNAME: ${OPENMRS_DB_USER:-openmrs}
       OMRS_CONFIG_CONNECTION_PASSWORD: ${OPENMRS_DB_PASSWORD:-openmrs}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/openmrs" ]
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
@@ -64,6 +64,17 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
       - db-data:/var/lib/mysql
+
+  ##Flask api for llm
+  llm-api:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    restart: "unless-stopped"
+    ports:
+      - "5000:5000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
 
 volumes:
   openmrs-data: ~

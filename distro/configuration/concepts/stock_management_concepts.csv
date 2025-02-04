@@ -1,0 +1,59 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Fully specified name:fr,Short name:en,Short name:fr,Description:en,Description:fr,Data class,Data type,Answers,Members,_version:1,_order:1001
+0ebc62ac-4a43-4bbb-a9af-e4269e0f143f,,,Dispensing Location ID,,,,,,Misc,Text,,,,
+46c5508c-a7fb-456f-989c-c3aee01b72f9,,,Drug ID,,,,,,Misc,Text,,,,
+c1ff3aad-a64e-4f64-a13c-e091e9c0e464,,,Piece,,Piece,,Packaging units,,Misc,N/A,,,,
+8f90a24d-21c6-472e-bf7a-417f9ba5edff,,,Strip,,Strip,,Packaging units,,Misc,N/A,,,,
+162396AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162396;
+SNOMED CT: 418445004",Box,,Box,,Packaging units,,Misc,N/A,,,,
+dca0dd7a-30ab-102d-86b0-7a5022ba4115,,,TIN,,TIN,,,,Finding,N/A,,,,
+1513AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"AMPATH: 1936;
+CIEL: 1513;
+PIH: 4020;
+SNOMED CT: 385055001",Tablet,,Tab,,,,Misc,N/A,,,,
+162382AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT: 415818006;
+CIEL: 162382",Vial,,,,,,Units of Measure,N/A,,,,
+1608AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"AMPATH: 1938;
+CIEL: 1608;
+PIH: 4024;
+SNOMED CT: 428641000",Capsule,,Cap,,,,Misc,N/A,,,,
+162335AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL: 162335;
+SNOMED CT: 413516001",Ampule(s),,Amp,,A unit for dosing medications.,,Units of Measure,N/A,,,,
+162353AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL: 162353;
+SNOMED CT: 419672006",Bottle,,Bottle,,,,Units of Measure,N/A,,,,
+d73e16b8-db37-461c-9295-3709e8137bb5,,,Blister tablet,,,,,,Drug form,N/A,,,,
+162355AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED NP: 408103002;
+CIEL: 162355",Container,,,,,,Units of Measure,N/A,,,,
+b83f84de-f88f-4e63-8ab6-ef9932f2223b,,,Gel,,,,,,Drug form,N/A,,,,
+162398AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL: 162398;
+SNOMED NP: 408102007",Dose pack,,,,Dispensing unit,,Misc,N/A,,,,
+bce2b1af-98b1-48a2-98a2-3e4ffb3c79c2,,,Packaging Units,,,,The coded concept for packaging units,,Misc,Coded,"Piece;
+Strip;
+Box;
+TIN;
+Tablet;
+Vial;
+Capsule;
+Ampule(s);
+Bottle;
+Blister tablet;
+Container;
+Gel;
+Dose pack",,,
+cabbfa22-045f-4752-84df-b06410af32f6,,,Expiry (EX),,,,,,Misc,N/A,,,,
+2c27df6f-68eb-4a1e-b58a-652efbe5eb26,,,Spillage,,,,,,Misc,N/A,,,,
+9f6e5852-2ecf-410f-8c7f-3d3ad489e1ff,,,Miscellaneous,,,,,,Misc,N/A,,,,
+3bbfaa44-d5b8-404d-b4c1-2bf49ad8ce25,,,Stock Adjustment Reason,,,,,,Question,Coded,"Expiry (EX);
+Spillage;
+Miscellaneous",,,
+42470698-9fd7-4cad-946b-3cc1aa347b72,,,Drugs,,,,Stock Item Category,,Misc,N/A,,,,
+8906fd6a-0a0d-4eda-af8f-81de3ab4f54e,,,Non Drugs,,,,Stock Item Category,,Misc,N/A,,,,
+6d24eb6e-b42f-4706-ab2d-ae4472161f6a,,,Stock Item Category,,,,The coded concept for stock item categories,,Misc,Coded,"Drugs;
+Non Drugs",,,
+da1e84f1-ae41-47d5-b11a-399417285244,,,Donation,,,,,,Misc,N/A,,,,
+9981d491-684f-42ab-9804-459669457fba,,,Local/Foreign Purchase,,,,,,Misc,N/A,,,,
+4abd7951-0ecd-4f07-9deb-263fdeb6c24c,,,Warehouse delivery,,,,,,Misc,N/A,,,,
+c015eaeb-b6ba-4613-8df2-eba816b1389a,,,Stock Transfer from another Facility,,,,,,Misc,N/A,,,,
+2e1e8049-9cbe-4a2d-b1e5-8a91e5d7d97d,,,Stock Source Type,,,,,,Question,Coded,"Donation;
+Local/Foreign Purchase;
+Warehouse delivery;
+Stock Transfer from another Facility",,,

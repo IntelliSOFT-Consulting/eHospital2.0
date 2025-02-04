@@ -1,11 +1,11 @@
 {
-  "name": "Admission form IPD",
+  "name": "Ward Admission",
   "pages": [
     {
-      "label": "IPD Request",
+      "label": "Ward Request",
       "sections": [
         {
-          "label": "Patient Details",
+          "label": "Ward Details",
           "isExpanded": "true",
           "questions": [
             {
@@ -19,6 +19,7 @@
                 {
                   "id": "disposition",
                   "type": "obs",
+                  "required": true,
                   "questionOptions": {
                     "rendering": "radio",
                     "required": true,
@@ -34,6 +35,7 @@
                 {
                   "id": "admitToLocation",
                   "type": "obs",
+                  "required": true,
                   "questionOptions": {
                     "rendering": "ui-select-extended",
                     "required": true,
@@ -54,11 +56,11 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "encounterType": "b2c4d5e6-7f8a-4e9b-8c1d-2e3f8e4a3b8f",
-  "encounter": "Admission form IPD",
+  "encounter": "Transfer Request",
+  "encounterType": "Transfer Request",
   "referencedForms": [],
-  "uuid": "43edc2e0-8418-4cb4-9cc0-63f137cdad50",
-  "description": "Admission form IPD",
+  "uuid": "xxxx",
+  "description": "Create an admission request to an inpatient ward",
   "version": "1.0.0",
   "published": true,
   "retired": false

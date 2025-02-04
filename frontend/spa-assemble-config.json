@@ -2,7 +2,6 @@
   "frontendModules": {
     "@openmrs/esm-devtools-app": "next",
     "@openmrs/esm-implementer-tools-app": "next",
-    "@openmrs/esm-login-app": "next",
     "@openmrs/esm-primary-navigation-app": "next",
     "@openmrs/esm-home-app": "next",
     "@openmrs/esm-form-engine-app": "next",
@@ -14,7 +13,6 @@
     "@openmrs/esm-patient-conditions-app": "next",
     "@openmrs/esm-patient-forms-app": "next",
     "@openmrs/esm-patient-flags-app": "next",
-    "@openmrs/esm-patient-labs-app": "next",
     "@openmrs/esm-patient-medications-app": "next",
     "@openmrs/esm-patient-notes-app": "next",
     "@openmrs/esm-patient-orders-app": "next",
@@ -26,6 +24,7 @@
     "@openmrs/esm-system-admin-app": "next",
     "@openmrs/esm-dispensing-app": "next",
     "@openmrs/esm-laboratory-app": "next",
+    "@openmrs/esm-patient-tests-app": "next",
     "@openmrs/esm-fast-data-entry-app": "next",
     "@openmrs/esm-cohort-builder-app": "next",
     "@openmrs/esm-stock-management-app": "next",
@@ -34,16 +33,17 @@
     "@openmrs/esm-user-onboarding-app": "next",
     "@openmrs/esm-ward-app": "next",
     "@openmrs/esm-bed-management-app": "next",
-    "@ehospital/esm-billing-app": "1.0.4",
+    "@ehospital/esm-billing-app": "next",
     "@ehospital/esm-patient-registration-app": "next",
     "@ehospital/esm-patient-list-app": "next",
-    "@ehospital/esm-reports-app": "next",
     "@ehospital/esm-service-queues-app": "next",
     "@ehospital/esm-procedure-app": "next",
     "@ehospital/esm-admin-nav-app": "next",
     "@ehospital/esm-import-export-app": "next",
     "@ehospital/esm-patient-visits-report-app": "next",
-    "@ehospital/esm-patient-flags-app": "next"
+    "@ehospital/esm-login-app": "next",
+    "@ehospital/esm-ai-model-app": "next",
+    "@ehospital/esm-messages-app": "next"
   },
   "excludedFrontendModules": []
 }

@@ -34,3 +34,16 @@ COPY --from=dev /openmrs/distribution/openmrs-distro.properties /openmrs/distrib
 COPY --from=dev /openmrs/distribution/openmrs_modules /openmrs/distribution/openmrs_modules
 COPY --from=dev /openmrs/distribution/openmrs_owas /openmrs/distribution/openmrs_owas
 COPY --from=dev /openmrs_distro/distro/configuration /openmrs/distribution/openmrs_config
+
+
+## Flask App
+FROM python:3.8-slim-buster
+
+WORKDIR /llm
+
+COPY llm/requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY /llm .
+EXPOSE 5000
+CMD [ "gunicorn", "-b", "0.0.0.0:5000", "--timeout", "60", "app:app" ]
