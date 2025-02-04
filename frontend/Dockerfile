@@ -2,7 +2,7 @@
 #--------------------------------------------
 # Dev Stage - Assembles and Builds Frontend
 #--------------------------------------------
-FROM --platform=$BUILDPLATFORM node:18-alpine as dev
+FROM --platform=$BUILDPLATFORM node:lts-alpine as dev
 
 ARG APP_SHELL_VERSION=next
 
@@ -14,20 +14,21 @@ COPY spa-build-config.json .
 COPY /assets /app/assets
 
 ARG CACHE_BUST
-RUN npm install -g npm@10.9.0
+RUN npm install -g npm@11.0.0
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
 
 # Copy the required files and echo
 RUN echo "Copying required files ..." && \
-    cp ./assets/login-icon.png ./spa && \
+    cp ./assets/ehospitallogo.jpg ./spa && \
+    cp ./assets/ehospitallogo.png ./spa && \
     cp ./assets/primary-navigation.jpg ./spa && \
     cp spa-build-config.json ./spa
 
 RUN if [ ! -f ./spa/index.html ]; then echo 'Build failed. Please check the logs above for details. This may have happened because of an update to a library that OpenMRS depends on.'; exit 1; fi
 
 # Modify page title
-RUN sed -i 's/<title>.*<\/title>/<title>SJHC<\/title>/' ./spa/index.html
+RUN sed -i 's/<title>.*<\/title>/<title>eHospital<\/title>/' ./spa/index.html
 
 #--------------------------------------------
 # Runtime Stage - Published Image

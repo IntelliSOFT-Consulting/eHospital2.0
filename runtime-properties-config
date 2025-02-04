@@ -1,0 +1,15 @@
+mambaetl.analysis.db.username=username // change this with your db username
+mambaetl.analysis.db.password=4****** // change this with your db password
+mambaetl.analysis.db.openmrs_database=openmrs
+mambaetl.analysis.db.etl_database=ehospital_etl
+
+#preferred concepts locale
+mambaetl.analysis.locale=en
+#MySQL fails when Columns become too large, we can partition tables and have other columns in other subsequent tables
+mambaetl.analysis.columns=100
+#Whether the ETL should delete and recreate all ETL tables or only add/modify what has changed
+mambaetl.analysis.incremental_mode=1
+#MambaETL will automatically flatten all encounters in the OpenMRS database if set to 1
+mambaetl.analysis.automated_flattening=0
+#The ETL interval in seconds. ETL will run every number of seconds specified here
+mambaetl.analysis.etl_interval=43200

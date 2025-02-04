@@ -20,6 +20,7 @@ b456e383-086b-4c78-adbb-c6fbe711721f,,MOH 510 Immunization,Encounter for capturi
 001309ab-10e3-4b4d-9706-6982cfabc5fe,,Ultra Sound,Encounter for Capturing Ultra Sound information,,,
 f02fecec-4d74-4430-8e59-5150016551e5,,Findings and Treatment,Encounter for Capturing Findings and Treatment information,,,
 99a7a6ba-59f4-484e-880d-01cbeaead62f,,Procedures Results,Encounter for Capturing Procedures,,,
-b2c4d5e6-7f8a-4e9b-8c1d-2e3f8e4a3b8f,,Admission form IPD,A stand-alone encounter type for a transfer request not part of a larger note,,,
+b2c4d5e6-7f8a-4e9b-8c1d-2e3f8e4a3b8f,,Transfer Request,A stand-alone encounter type for a transfer request not part of a larger note,,,
 f47ac10b-58cc-4372-a567-0e02b2c3d479,,Bed Assignment,Assigning a new bed to a patient without admitting or transferring them,,,
 550e8400-e29b-41d4-a716-446655440000,,Cancel ADT,An encounter that notes that a request to admit/transfer/discharge a patient is being overridden,,,
+7df67b83-1b84-4fe2-b1b7-794b4e9bfcc3,,Drug Order,Encounter for orders,,,

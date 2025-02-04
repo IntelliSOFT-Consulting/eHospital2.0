@@ -71,83 +71,93 @@
               "required": false,
               "questionOptions": {
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "numeric",
-                "min": "25"
+                "rendering": "numeric"
               },
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 37.5 || myValue < 35)",
+                "alertWhenExpression": "temperature >= 42 || temperature < 30",
                 "message": "Temperature is out of range (Normal range 35-37)"
-              }
+              },
+              "validators": []
             },
             {
               "label": "Pulse Rate (beats/min)",
               "type": "obs",
               "id": "pulseRate",
+              "required": false,
               "questionOptions": {
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+                "alertWhenExpression": "pulseRate >= 100.5 || pulseRate < 59.",
                 "message": "Pulse Rate is out of range (Normal range 60-100)"
-              }
+              },
+              "validators": []
             },
             {
               "label": "Systolic B.P (mmHg)",
               "type": "obs",
               "id": "sysBP",
+              "required": false,
               "questionOptions": {
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 130.5 || myValue < 119.5)",
+                "alertWhenExpression": "sysBP >= 130.5 || sysBP < 119.5",
                 "message": "Systolic is out of range (Normal range 120-130)"
-              }
+              },
+              "validators": []
             },
             {
               "label": "Diastolic B.P (mmHg)",
               "type": "obs",
               "id": "diasBP",
+              "required": false,
               "questionOptions": {
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 85.5 || myValue < 79.5)",
+                "alertWhenExpression": "diasBP >= 85.5 || diasBP < 79.5",
                 "message": "Diastolic is out of range (Normal range 80-85)"
-              }
+              },
+              "validators": []
             },
             {
               "label": "Respiratory Rate (breaths/min)",
               "type": "obs",
               "id": "respRate",
+              "required": false,
               "questionOptions": {
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
+                "alertWhenExpression": "respRate >= 16.5 || respRate < 11.5",
                 "message": "Respiratory Rate is out of range (Normal range 12-16)"
-              }
+              },
+              "validators": []
             },
             {
               "label": "Oxygen Saturation (%)",
               "type": "obs",
               "id": "oxygenSat",
+              "required": false,
               "questionOptions": {
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
-                "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 94.5)",
+                "alertWhenExpression": "oxygenSat >= 100.5 || oxygenSat < 94.5",
                 "message": "Oxygen Saturation is out of range (Normal range 95-100)"
-              }
+              },
+              "validators": []
             }
           ]
         },
@@ -160,7 +170,7 @@
               "id": "weight",
               "type": "obs",
               "required": "true",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
+              "historicalExpression": "age <= 5 ? HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
@@ -176,7 +186,7 @@
               "id": "weightForBMI",
               "type": "obs",
               "required": "true",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
+              "historicalExpression": "age > 5 ? HD.getObject('prevEnc')?.getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
@@ -192,7 +202,7 @@
               "id": "height",
               "type": "obs",
               "required": "true",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
+              "historicalExpression": "age <= 5 ? HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
@@ -208,7 +218,7 @@
               "id": "heightForBMI",
               "type": "obs",
               "required": "true",
-              "historicalExpression": "HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || ''",
+              "historicalExpression": "age > 5 ? HD.getObject('prevEnc')?.getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || '' : ''",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "numeric",
@@ -223,6 +233,7 @@
               "label": "BMI (Kg/m2)",
               "id": "bmi",
               "type": "obs",
+              "required": false,
               "questionOptions": {
                 "rendering": "numeric",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -240,6 +251,7 @@
               "label": "MUAC",
               "id": "muac",
               "type": "obs",
+              "required": false,
               "questionOptions": {
                 "rendering": "numeric",
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -258,6 +270,7 @@
             {
               "label": "Triage Notes:",
               "type": "obs",
+              "required": false,
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "324e55a6-2a39-496a-8e56-54281efcfebd"
