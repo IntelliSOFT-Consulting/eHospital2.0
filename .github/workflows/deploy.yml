@@ -8,13 +8,17 @@ on:
 
 permissions: {}
 
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Deploy on remote server over SSH
-        uses: appleboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@7eaf76671a0d7eec5d98ee897acda4f968735a17 # v1.2.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
@@ -23,8 +27,7 @@ jobs:
           script_stop: true
           script: |
             cd /opt/eHospital2.0
-            git stash
+            git fetch origin
             git checkout main
-            git pull origin main --rebase
-            git stash pop
+            git reset --hard origin/main
             docker compose up -d --build --remove-orphans
