@@ -1,0 +1,28 @@
+name: Deploy eHospital
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy on remote server over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script_stop: true
+          script: |
+            cd /opt/eHospital2.0
+            git stash
+            git checkout main
+            git pull origin main --rebase
+            git stash pop
+            docker compose down && docker compose up --build -d
