@@ -6,33 +6,47 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
     <changeSet id="disable-stale-appointment-tasks-1" author="ehospital">
+
         <update tableName="scheduler_task_config">
             <column name="start_on_startup" valueNumeric="0"/>
-            <where>schedulable_class LIKE '%appointments.scheduler.tasks%'</where>
+            <where>
+                schedulable_class IN (
+                'org.openmrs.module.appointments.scheduler.tasks.LegacyAppointmentSyncTask',
+                'org.openmrs.module.appointments.scheduler.tasks.ObsoleteAppointmentReminderTask'
+                )
+            </where>
         </update>
     </changeSet>
 
-    <changeSet id="inject-xstream-whitelist-global-property-1" author="ehospital">
-        <!-- 
-            Why is this here instead of just globalproperties-core_data.xml?
-            The OpenMRS Initializer module processes globalproperties-core_data.xml during module startup.
-            However, the 'ehospitalreports' module tries to deserialize report definitions BEFORE the
-            Initializer has finished loading global properties. If the XStream whitelist is not already in 
-            the database, the server will crash with a ForbiddenClassException. 
-            
-            By injecting this via Liquibase, we guarantee the property is in the database before ANY 
-            modules start loading, completely preventing the exception even on a fresh database restore!
+    <changeSet id="fix-xstream-whitelist-global-property-1" author="ehospital">
+
+        <!--
+            Only manage properties owned by reporting + ehospitalreports.
+            Do NOT touch global OpenMRS or admin-managed XStream settings.
         -->
-        
-        <!-- Delete any old/wrong properties to avoid duplicates -->
+
+        <!-- Remove ONLY conflicting properties related to THIS module -->
         <delete tableName="global_property">
-            <where>property IN ('serialization.xstream.allowedClasses', 'ehospitalreports.serializer.whitelist.types')</where>
+            <where>
+                property IN (
+                'ehospitalreports.serializer.whitelist.types'
+                )
+            </where>
+        </delete>
+
+        <!-- Ensure correct reporting whitelist exists -->
+        <delete tableName="global_property">
+            <where>
+                property = 'reporting.serializer.whitelist.types'
+            </where>
         </delete>
         
         <insert tableName="global_property">
-            <column name="property" value="ehospitalreports.serializer.whitelist.types"/>
-            <column name="property_value" value="org.openmrs.module.ehospitalreports.**"/>
-            <column name="description" value="Allowed classes for ehospitalreports XStream deserialization"/>
+            <column name="property" value="reporting.serializer.whitelist.types"/>
+            <column name="property_value"
+                    value="org.openmrs.module.reporting.**,org.openmrs.module.ehospitalreports.**"/>
+            <column name="description"
+                    value="Allowed classes for reporting + ehospitalreports XStream deserialization"/>
             <column name="uuid" valueComputed="UUID()"/>
         </insert>
     </changeSet>
