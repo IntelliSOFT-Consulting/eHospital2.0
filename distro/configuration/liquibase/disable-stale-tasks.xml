@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="disable-stale-appointment-tasks-1" author="ehospital">
+
+        <update tableName="scheduler_task_config">
+            <column name="start_on_startup" valueNumeric="0"/>
+            <where>
+                schedulable_class IN (
+                'org.openmrs.module.appointments.scheduler.tasks.LegacyAppointmentSyncTask',
+                'org.openmrs.module.appointments.scheduler.tasks.ObsoleteAppointmentReminderTask'
+                )
+            </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="fix-xstream-whitelist-global-property-1" author="ehospital">
+
+        <!--
+            Only manage properties owned by reporting + ehospitalreports.
+            Do NOT touch global OpenMRS or admin-managed XStream settings.
+        -->
+
+        <!-- Remove ONLY conflicting properties related to THIS module -->
+        <delete tableName="global_property">
+            <where>
+                property IN (
+                'ehospitalreports.serializer.whitelist.types'
+                )
+            </where>
+        </delete>
+
+        <!-- Ensure correct reporting whitelist exists -->
+        <delete tableName="global_property">
+            <where>
+                property = 'reporting.serializer.whitelist.types'
+            </where>
+        </delete>
+        
+        <insert tableName="global_property">
+            <column name="property" value="reporting.serializer.whitelist.types"/>
+            <column name="property_value"
+                    value="org.openmrs.module.reporting.**,org.openmrs.module.ehospitalreports.**"/>
+            <column name="description"
+                    value="Allowed classes for reporting + ehospitalreports XStream deserialization"/>
+            <column name="uuid" valueComputed="UUID()"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
