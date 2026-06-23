@@ -40,7 +40,6 @@
     "@openmrs/esm-user-onboarding-app": "4.0.0",
     "@openmrs/esm-ward-app": "10.0.2",
     "@openmrs/esm-bed-management-app": "10.0.2",
-    "@ohri/openmrs-esm-ohri-form-render-app": "2.3.7-pre.507",
     "@ehospital/esm-billing-app": "next",
     "@ehospital/esm-patient-registration-app": "next",
     "@ehospital/esm-patient-list-app": "next",
