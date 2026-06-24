@@ -61,6 +61,7 @@
     <!-- Stock Management and Billing -->
     <stockmanagement.version>3.0.0</stockmanagement.version>
     <billing.version>2.2.0</billing.version>
+    <ehospitalws.version>1.0.1-SNAPSHOT</ehospitalws.version>
   </properties>
 
   <dependencies>
@@ -246,6 +247,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>billing-omod</artifactId>
       <version>${billing.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>ehospitalws-omod</artifactId>
+      <version>${ehospitalws.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
