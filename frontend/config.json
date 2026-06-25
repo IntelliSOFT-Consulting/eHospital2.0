@@ -7,7 +7,7 @@
   "@openmrs/esm-bed-management-app": {
     "admissionLocationTagUuid": "f5b9737b-14d5-402b-8475-dd558808e172"
   },
-  "@ehospital/esm-billing-app": {
+  "@intellisoftkenya/esm-billing-app": {
     "extensionSlots": {
       "billing-dashboard-slot": {}
     },
@@ -55,7 +55,7 @@
       }
     }
   },
-  "@ehospital/esm-login-app": {
+  "@intellisoftkenya/esm-login-app": {
       "logo": {
           "src": "/openmrs/spa/ehospitallogo.png"
       }
@@ -90,7 +90,7 @@
         }
       }
   },
-  "@ehospital/esm-patient-registration-app": {
+  "@intellisoftkenya/esm-patient-registration-app": {
       "sectionDefinitions": [
         {
           "id": "demographics",
@@ -220,7 +220,7 @@
         }
       }
   },
-  "@ehospital/esm-service-queues-app": {
+  "@intellisoftkenya/esm-service-queues-app": {
     "priorityConfigs": [
       {
         "conceptUuid": "04f6f7e0-e3cb-4e13-a133-4479f759574e",
