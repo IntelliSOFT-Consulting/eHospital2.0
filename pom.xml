@@ -158,6 +158,14 @@
       </snapshots>
     </repository>
     <repository>
+      <id>intellisoft-ehospital</id>
+      <name>IntelliSOFT eHospital Repository</name>
+      <url>https://repo.repsy.io/intellisoftdev/ehospital</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
       <id>sonatype-nexus-snapshots</id>
       <name>Sonatype Nexus Snapshots</name>
       <url>https://central.sonatype.com/repository/maven-snapshots</url>
