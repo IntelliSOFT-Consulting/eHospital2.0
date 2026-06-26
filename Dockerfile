@@ -29,6 +29,15 @@ RUN mvn $MVN_ARGS_SETTINGS clean
 # Replace 'nightly' with the exact version of openmrs-core built for production (if available)
 FROM openmrs/openmrs-core:2.8.x-amazoncorretto-17
 
+# The upstream startup-init.sh quotes cleanup globs, which prevents stale
+# files in persistent OpenMRS data directories from being removed.
+RUN sed -i \
+  -e 's#rm -fR "${OMRS_MODULES_DIR:?}/\*"#rm -fR "${OMRS_MODULES_DIR:?}/"*#' \
+  -e 's#rm -fR "${OMRS_OWA_DIR:?}/\*"#rm -fR "${OMRS_OWA_DIR:?}/"*#' \
+  -e 's#rm -fR "${OMRS_CONFIG_DIR:?}/\*"#rm -fR "${OMRS_CONFIG_DIR:?}/"*#' \
+  -e 's#rm -fR "${OMRS_FRONTEND_DIR:?}/\*"#rm -fR "${OMRS_FRONTEND_DIR:?}/"*#' \
+  /openmrs/startup-init.sh
+
 # Do not copy the war if using the correct openmrs-core image version
 COPY --from=dev /openmrs/distribution/openmrs_core/openmrs.war /openmrs/distribution/openmrs_core/
 

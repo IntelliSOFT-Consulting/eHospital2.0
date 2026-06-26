@@ -33,7 +33,8 @@ services:
       - ehospital
 
   backend:
-    image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
+    #image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
+    build: .
     restart: "unless-stopped"
     depends_on:
       - db
