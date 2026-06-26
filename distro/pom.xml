@@ -65,7 +65,7 @@
     <!-- eHospital Custom Modules -->
     <ehospitalws.version>1.0.0-SNAPSHOT</ehospitalws.version>
     <ehospitalreports.version>1.0.0-SNAPSHOT</ehospitalreports.version>
-    <mamba-tl-ehospital.version>1.0.1-SNAPSHOT</mamba-tl-ehospital.version>
+    <mamba-etl-ehospital.version>1.0.1-SNAPSHOT</mamba-etl-ehospital.version>
   </properties>
 
   <dependencies>
@@ -273,8 +273,8 @@
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>mamba-tl-ehospital-omod</artifactId>
-      <version>${mamba-tl-ehospital.version}</version>
+      <artifactId>mamba-etl-ehospital-omod</artifactId>
+      <version>${mamba-etl-ehospital.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
