@@ -33,6 +33,7 @@
     <legacyui.version>2.0.0</legacyui.version>
     <metadatamapping.version>2.0.0</metadatamapping.version>
     <metadatasharing.version>1.9.0</metadatasharing.version>
+    <metadatadeploy.version>1.12.1</metadatadeploy.version>
     <openconceptlab.version>3.0.0</openconceptlab.version>
     <attachments.version>4.0.0</attachments.version>
     <referencedemodata.version>2.6.1</referencedemodata.version>
@@ -61,6 +62,10 @@
     <!-- Stock Management and Billing -->
     <stockmanagement.version>3.0.0</stockmanagement.version>
     <billing.version>2.2.0</billing.version>
+    <!-- eHospital Custom Modules -->
+    <ehospitalws.version>1.0.0-SNAPSHOT</ehospitalws.version>
+    <ehospitalreports.version>1.0.0-SNAPSHOT</ehospitalreports.version>
+    <mamba-tl-ehospital.version>1.0.1-SNAPSHOT</mamba-tl-ehospital.version>
   </properties>
 
   <dependencies>
@@ -131,6 +136,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>metadatasharing-omod</artifactId>
       <version>${metadatasharing.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>metadatadeploy-omod</artifactId>
+      <version>${metadatadeploy.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -246,6 +257,24 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>billing-omod</artifactId>
       <version>${billing.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>ehospitalws-omod</artifactId>
+      <version>${ehospitalws.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>ehospitalreports-omod</artifactId>
+      <version>${ehospitalreports.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>mamba-tl-ehospital-omod</artifactId>
+      <version>${mamba-tl-ehospital.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
