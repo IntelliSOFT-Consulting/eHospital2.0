@@ -4,5 +4,9 @@
             <property>fhir2.administeringEncounterRoleUuid</property>
 		    <value>240b26f9-dd88-4172-823d-4a8bfeb7841f</value>
         </globalProperty>
+        <globalProperty>
+            <property>fhir2.immunizationsEncounterTypeUuid</property>
+            <value>b456e383-086b-4c78-adbb-c6fbe711721f</value>
+        </globalProperty>
     </globalProperties>
 </config>

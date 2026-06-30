@@ -1,7 +1,7 @@
 Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:1001,Data class,Data type,Answers,Members
-fda5119b-6a0f-4016-8ecf-90c619a42b5f,,,Routine,Routine,,,,,Misc,N/A,,
+fda5119b-6a0f-4016-8ecf-90c619a42b5f,,,Ultrasound Routine,Routine,,,,,Misc,N/A,,
 dc3492ef-24a5-4fd9-b58d-4fd2acf7071f,,,Urgent,Urgent,,,,,Misc,N/A,,
-e1449ab7-dd55-4443-a7c1-bf77b39ea386,,,Exam Requested,Exam Requested,,,,,Question,Coded,"Routine;
+e1449ab7-dd55-4443-a7c1-bf77b39ea386,,,Exam Requested,Exam Requested,,,,,Question,Coded,"Ultrasound Routine;
 Urgent",
 d1e2f14d-cc8c-4fb2-ba44-04c2f223d294,,,Referral,Referral,,,,,Question,Coded,Yes; No,
 9a4112f5-5233-49d8-8ccf-c1ffc5ace7a3,,,Date of referral,Date of referral,,,,,Question,Date,,
