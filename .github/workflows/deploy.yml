@@ -32,5 +32,5 @@ jobs:
             # Reset to origin/main to avoid stash-pop merge conflicts during deploy.
             # Any local server modifications will be discarded; keep config outside the repo.
             git reset --hard origin/main
-            docker compose build --build-arg CACHE_BUST=$(date +%s) frontend
+            docker compose -f docker-compose.yml -f docker-compose.override.yml build frontend --no-cache
             docker compose -f docker-compose.yml -f docker-compose.override.yml up -d --build --remove-orphans  
