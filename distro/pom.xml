@@ -63,7 +63,7 @@
     <stockmanagement.version>3.0.0</stockmanagement.version>
     <billing.version>2.2.0</billing.version>
     <!-- eHospital Custom Modules -->
-    <ehospitalws.version>1.0.1-SNAPSHOT</ehospitalws.version>
+    <ehospitalws.version>1.0.2-SNAPSHOT</ehospitalws.version>
     <ehospitalreports.version>1.0.0-SNAPSHOT</ehospitalreports.version>
     <mamba-etl-ehospital.version>1.0.1-SNAPSHOT</mamba-etl-ehospital.version>
   </properties>
