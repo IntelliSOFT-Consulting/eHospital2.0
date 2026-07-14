@@ -58,7 +58,7 @@ bf2f727b-92b9-48f7-84c1-6824672dda1b,,Cloxacillin 250mg,Cloxacillin,05648f58-af2
 027dd307-9777-4172-a5ed-8b4fda0d90bd,,Dexamethasone 4mg,Dexamethasone,a16cf8ce-2d81-40eb-ae98-c1e3cccfc0f0,Drugs,Enabled
 37d57681-7123-4877-9153-4f2725e953d3,,Doxycycline,Doxycycline,401f5767-dc54-4446-ac95-4b32a95631ce,Drugs,Enabled
 a2cd101a-eefc-49ce-a814-e544f1398748,,Doxylamine/Pyridoxine( NOSIC),Doxylamine/Pyridoxine( NOSIC),99a7688f-560f-4d0c-b916-f99805c75764,Drugs,Enabled
-515bf51a-7130-4406-9b87-182045ca669b,,Domperidone 10mLosartan Potassium 50mgg,Domperidone,b68192db-fc09-445f-9232-0ba54858e41d,Drugs,Enabled
+515bf51a-7130-4406-9b87-182045ca669b,,Domperidone 10mg,Domperidone,b68192db-fc09-445f-9232-0ba54858e41d,Drugs,Enabled
 041c3bb1-7a92-4b10-ae01-7d7da0621cd6,,Chlorpromazine 25mg,Chlorpromazine,b50c9258-d3cc-43ea-9855-1c2b685f4aa9,Drugs,Enabled
 107513a9-4511-4534-8604-2034bdf9633d,,Enalapril 5mg & 10mg,Enalapril,91a76638-577c-4f59-9ee3-f509759f1a83,Drugs,Enabled
 bc1bc00d-a5aa-4154-84ff-d8af59006e89,,Flucloxacillin 250mg,Flucloxacillin,c69819a1-8a9d-4602-b33d-a149bdd88d9b,Drugs,Enabled
@@ -89,3 +89,22 @@ a168f3e7-6230-4c90-90cd-25cf85bce6e6,,Metformin hydrochloride 500mg,Metformin hy
 0caa1a1b-60fb-47d6-a15c-ffab7ffe6b0f,,Metrinidazole + Diloxide 900mg,Metrinidazole + Diloxide,f895c025-7092-4384-9132-62cf26d81a63,Drugs,Enabled
 1c3b4a5e-160d-4cf6-9c84-9d16f78e32b0,,Myospaz,Myospaz,f7f5f43e-304f-455c-a396-0e1159bc5902,Drugs,Enabled
 99868949-4d37-4995-8e24-bbeb2a415cb4,,Meloxicam 15mg,Meloxicam,13e8315b-943d-4039-995d-9955b238c109,Drugs,Enabled
+9f526a96-03f4-427d-b1b1-2e34ef93d761,,Mefenamic Acid 250mg,Mefenamic Acid,a36ade8a-d376-4c3c-a770-de2791bdad49,Drugs,Enabled
+0b8ac78c-4bc0-4e22-b521-a880e1a3908d,,Mefenamic Acid 500mg,Mefenamic Acid,a36ade8a-d376-4c3c-a770-de2791bdad49,Drugs,Enabled
+e8fb7e24-0608-44da-85c0-ad128183336c,,Methyldopa,Methyldopa,cab6398a-a1dd-434e-882f-4410a0db6446,Drugs,Enabled
+0d3a7246-e855-49ad-96f1-5d4711c0912b,,Norfloxacin 400mg,Norfloxacin,01b3ff61-874b-496a-8572-e4009bdcd554,Drugs,Enabled
+4e744a5e-ced5-4dfa-ba25-b6b501d8ac29,,Norfloxacin 100pk,Norfloxacin,01b3ff61-874b-496a-8572-e4009bdcd554,Drugs,Enabled
+0b5a43a0-48a6-49ed-abc2-836d2c7e1e33,,Nifedipine 20mg,Nifedipine,960acf61-cb22-4f57-844d-5323ee272c30,Drugs,Enabled
+6e009847-16c6-40c1-939c-87305f8797f9,,Nitrofurantoin 100mg,Nitrofurantoin,8ca26ec0-33a3-49b7-b931-270d36abb3c3,Drugs,Enabled
+b5b377eb-11ed-4a6e-89e1-8cc1db836277,,Nebivold 5mg & 10mg,Nebivold,4be90f7c-6f69-413f-bdfb-cc84ba8c549a,Drugs,Enabled
+2790c62b-bb9f-4520-be37-353a365fc114,,Ondansetron 4mg,Ondansetron,8f442e8f-10b8-470b-8491-cc3cfdb1a10e,Drugs,Enabled
+c0adce14-8122-48c4-bd13-b3eddcdcbb5c,,Omeprazole 20mg,Omeprazole,24e47e63-4e17-4360-8513-9d8fbee6cb9e,Drugs,Enabled
+dd2819ef-199c-4fe7-8bdb-657f4f5d3841,,Paracetamol1 g,Paracetamol1,a8f291fe-ff16-4ef2-a5c6-6b4616e063eb,Drugs,Enabled
+6e7ec308-481b-4f65-b865-913c3012be3b,,Pynstop,Pynstop,91d2450c-dd13-469b-a9e8-1134599e5041,Drugs,Enabled
+a7a4dfa3-47d1-4fc1-b444-3fde53dcbef3,,Phenobarbitone 30mg,Phenobarbitone,8d230fbb-859f-492e-bca4-dd55111f3d04,Drugs,Enabled
+fb8974dd-685f-4122-a58a-d1e5016422fd,,Pronerve 75mg/750mg(pregabalin,Pronerve,709afb2c-3335-4cf7-bfc3-28278c67a08b,Drugs,Enabled
+00953795-7e65-4cd0-8eb8-15df70a53abe,,Prednsolene 10mg,Prednsolene,c3ef6727-7c89-4a5b-8577-3dbcbdb3c987,Drugs,Enabled
+00953795-7e65-4cd0-8eb8-15df70a53abe,,Pregabalin 75mg,Pregabalin,5a9abf38-6186-4675-bb1f-be07818d950c,Drugs,Enabled
+c7373e9a-9838-4164-9fe4-795c7d440756,,Pregnacare,Pregnacare,f51c5948-db5a-4050-b93e-836a95b7d874,Drugs,Enabled
+278a281b-bfc9-434c-bf4f-8384339eee74,,Primolut N,Primolut N,04172535-cb12-4d3e-b6be-24e8166fe343,Drugs,Enabled
+254ea681-8b38-4666-b23b-3577b829cde2,,Promethszine 25mg,Promethszine,5558ae25-e094-4ee0-b1b4-ab5d6824766e,Drugs,Enabled
