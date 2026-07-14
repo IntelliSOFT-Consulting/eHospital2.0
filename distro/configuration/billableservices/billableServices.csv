@@ -58,7 +58,7 @@ bf2f727b-92b9-48f7-84c1-6824672dda1b,,Cloxacillin 250mg,Cloxacillin,05648f58-af2
 027dd307-9777-4172-a5ed-8b4fda0d90bd,,Dexamethasone 4mg,Dexamethasone,a16cf8ce-2d81-40eb-ae98-c1e3cccfc0f0,Drugs,Enabled
 37d57681-7123-4877-9153-4f2725e953d3,,Doxycycline,Doxycycline,401f5767-dc54-4446-ac95-4b32a95631ce,Drugs,Enabled
 a2cd101a-eefc-49ce-a814-e544f1398748,,Doxylamine/Pyridoxine( NOSIC),Doxylamine/Pyridoxine( NOSIC),99a7688f-560f-4d0c-b916-f99805c75764,Drugs,Enabled
-515bf51a-7130-4406-9b87-182045ca669b,,Domperidone 10mg,Domperidone,b68192db-fc09-445f-9232-0ba54858e41d,Drugs,Enabled
+515bf51a-7130-4406-9b87-182045ca669b,,Domperidone 10mLosartan Potassium 50mgg,Domperidone,b68192db-fc09-445f-9232-0ba54858e41d,Drugs,Enabled
 041c3bb1-7a92-4b10-ae01-7d7da0621cd6,,Chlorpromazine 25mg,Chlorpromazine,b50c9258-d3cc-43ea-9855-1c2b685f4aa9,Drugs,Enabled
 107513a9-4511-4534-8604-2034bdf9633d,,Enalapril 5mg & 10mg,Enalapril,91a76638-577c-4f59-9ee3-f509759f1a83,Drugs,Enabled
 bc1bc00d-a5aa-4154-84ff-d8af59006e89,,Flucloxacillin 250mg,Flucloxacillin,c69819a1-8a9d-4602-b33d-a149bdd88d9b,Drugs,Enabled
@@ -73,3 +73,19 @@ b8a970de-0926-4f1a-9876-fea6f7e23e5b,,Gabapentin 300mg,Gabapentin,85c61da8-e1b1-
 8c52cf10-78b5-42ea-81ac-ae8947c66653,,Glibenclamide + Metformin 500mg,Glibenclamide + Metformin,4a25550c-ec3f-4682-9bc8-0ec2b508de51,Drugs,Enabled
 b0eee744-3016-47dc-a769-190c7725d36a,,Haematinic caps,Haematinic caps,f7d2ca96-1816-4674-9d9c-c3ac3d628302,Drugs,Enabled
 600002fd-be17-4b18-a919-b3a28b9cf0a3,,HPylori KIT,H Pylori KIT,8a47f4d9-7d6e-4ca7-9f5a-f168ad9670a4,Drugs,Enabled
+2c782e50-0d61-497d-9a51-52c9c6e14898,,Hydrochlorathiazide 50mg,Hydrochlorathiazide,ea3873ed-5040-4809-a778-a3a512b26c26,Drugs,Enabled
+794e089c-2bec-4a5e-863a-9a9a5504568c,,Hyoscine butylbromide(buscopan),Hyoscine butylbromide,44dbd31a-7c2d-422d-b584-004532e4aaff,Drugs,Enabled
+2a607630-bc1f-49e0-b0f9-9cd34b0b8b74,,Levofloxacin 500mg,Levofloxacin,98dbb9b2-9859-4b68-b08a-78f88f629d40,Drugs,Enabled
+768f8b76-2da0-492b-865f-5da01a489c78,,Loperamide 2mg,Loperamide,93300946-bfe5-4db1-b715-c565420df9d6,Drugs,Enabled
+f9a6346c-d1a6-48dc-8092-7448638b4086,,Losartan Potassium 50mg,Losartan Potassium,da7c647f-f57b-4f99-a2ae-ae142603d984,Drugs,Enabled
+fe4838c5-346c-45be-8bfc-07e1833a0905,,Metformin 850mg,Metformin,7668c1a1-5636-47d3-981a-1207292fcfcf,Drugs,Enabled
+a168f3e7-6230-4c90-90cd-25cf85bce6e6,,Metformin hydrochloride 500mg,Metformin hydrochloride,88adea30-cf30-4368-b9aa-409d47d55569,Drugs,Enabled
+79b24d73-256a-4819-bcdd-da145594f3b2,,Mebendazole 500mg,Mebendazole,a3b229cd-b5a3-4eaf-8a48-b51182d63908,Drugs,Enabled
+97f64017-8ab8-4fdd-bf87-54e548b53d30,,Multivitamin tablets,Multivitamin tablets,2f5deb62-1ae1-46da-be94-9d416cae0dd1,Drugs,Enabled
+8d30c094-6e99-41be-952b-8d476f5840ee,,Montelukast 10mg,Montelukast,a194e521-5d12-446e-b44c-c4b625105c37,Drugs,Enabled
+3272e439-b0cd-4bff-b386-eb56234b17f4,,Morphine 10 mg,Morphine,e419207b-eb30-4413-8b82-1f53b87cc0b3,Drugs,Enabled
+1333530d-35fc-4602-9d27-11cb0afcb1c4,,Metrionidazole 400mg,Metrionidazole,2dfa48bc-d03b-4e78-8844-e6df01e9b924,Drugs,Enabled
+957f62f3-4b91-4a47-8766-14fd5f3c375c,,Metrionidazole 200mg,Metrionidazole,b0c31980-b5f9-4cdd-b2ee-b957fa4d96e1,Drugs,Enabled
+0caa1a1b-60fb-47d6-a15c-ffab7ffe6b0f,,Metrinidazole + Diloxide 900mg,Metrinidazole + Diloxide,f895c025-7092-4384-9132-62cf26d81a63,Drugs,Enabled
+1c3b4a5e-160d-4cf6-9c84-9d16f78e32b0,,Myospaz,Myospaz,f7f5f43e-304f-455c-a396-0e1159bc5902,Drugs,Enabled
+99868949-4d37-4995-8e24-bbeb2a415cb4,,Meloxicam 15mg,Meloxicam,13e8315b-943d-4039-995d-9955b238c109,Drugs,Enabled
